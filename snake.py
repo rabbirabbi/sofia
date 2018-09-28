@@ -1,14 +1,18 @@
-
+#write a programm to play snake and ladder
 import random 
 p=0
+#use while loop and add the conditions
 while(p<=100):
+#roll a die 	
 	a=input("enter r or q:")
 	if(a=='r'):
 		r=(random.randint(1,6))
 		p=p+r
+#print position and number in dice		
 		print("my position:",p)
 		print("num in dice:",r)
-		if(p==8):
+#position of snakes and ladders 
+        if(p==8):
 			print("congrats u can climb the ladder")
 			p=37
 		elif(p==11):
@@ -40,9 +44,11 @@ while(p<=100):
 		elif(p==93):
 			print("oops sry u r bite by snake")
 			p=64
+#limit of the game is 100
 		elif(p>=100):
-			p=p-a
+			p=p-r
 			print("congrats u won the game")
+#to quit			
 		if(a=='q'):
 			print("bye")
 			exit()
