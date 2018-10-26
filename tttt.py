@@ -7,31 +7,37 @@ def b():
 	print("--------------------")
 	print(a[6]+'|'+a[7]+'|'+a[8])
 p1Turn=True
-for i in range(9):
+while True:
 	b()
-#p1 plays	
-	if p1Turn:
-		s=input("p1,choose place:")
-		if s in a:
-			a[int(s)-1]='x'
-			p1Turn=not p1Turn
-#p2 plays				
+	s=input("choose place:")
+	if(s in a):
+#missing condition		
+		else:
+			if p1Turn:
+				print("p1>>")
+				a[int(s)-1]='x'
+				p1Turn=not  p1Turn
+			else:
+				print("p2>>")
+				a[int(s)-1]='o'
+				p1Turn=not  p1Turn
+			for d in(0,3,6):
+				if(a[d]==a[d+1] and a[d]==a[d+2]):
+					print("bye.....bye")
+					exit()
+			for d in range(3):
+				if(a[d]==a[d+3] and a[d]==a[d+6]):
+					print("bye.....bye")
+					exit()
+					print("bye.....bye")
+					exit()
+			if(a[2]==a[4] and a[2]==a[6]):
+					print("bye.....bye")
+					exit()
 	else:
-		t=input("p2,choose place:")
-		if t in a:
-			a[int(t)-1]='o'
-			p1Turn=not p1Turn
-for i in range(0,1,2):		
-a1=[1,2,3]
-a2=[4,5,6]
-a3=[7,8,9]
-a4=[1,5,9]
-a5=[3,5,7]
-a6=[1,4,7]
-a7=[2,5,8]
-a8=[3,6,9]
-if((a1==s) or (a2==s) or (a3==s) or  (a4==s) or (a5==s) or (a6==s) or (a7==s) or (a8==s)):
-	
-	print("p1 won")				
+		print("invalid position")
+		continue
+		
+		
 
 
