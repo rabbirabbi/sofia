@@ -15,7 +15,7 @@ s.starttls()
 s.login(myemail,pwd)
 
 #msg to be sent
-msg="msg u want to send"
+msg="hi hw r u"
 
 #sending the mail
 s.sendmail(myemail,remail,msg)
