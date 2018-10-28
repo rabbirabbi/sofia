@@ -11,7 +11,10 @@ while True:
 	b()
 	s=input("choose place:")
 	if(s in a):
-#missing condition		
+		if(a[int(s)-1]=='x' or a[int(s)-1]=='o'):
+			print("already choosen place take other:")
+			continue
+
 		else:
 			if p1Turn:
 				print("p1>>")
