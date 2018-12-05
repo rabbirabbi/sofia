@@ -1,3 +1,4 @@
+PROGRAM 12
 #!/usr/bin/python
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 #|R|a|s|p|b|e|r|r|y|P|i|-|S|p|y|.|c|o|.|u|k|
@@ -59,3 +60,4 @@ print "Distance : %.1f" % distance
 
 # Reset GPIO settings
 GPIO.cleanup()
+OUTPUT
