@@ -1,4 +1,4 @@
-PROGRAM 8
+PROGRAM 6
 import matplotlib.pyplot as plt
 import csv
 
