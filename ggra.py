@@ -1,3 +1,4 @@
+PROGRAM 8
 import matplotlib.pyplot as plt
 import csv
 
@@ -16,3 +17,4 @@ plt.ylabel('y')
 plt.title('Interesting Graph\nCheck it out')
 plt.legend()
 plt.show()
+OUTPUT
