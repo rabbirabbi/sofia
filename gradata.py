@@ -1,3 +1,4 @@
+PROGRAM 10
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -11,3 +12,4 @@ ax.set_xlim(0, 10)
 ax.set_ylim(-1, 1)
 
 plt.show()
+OUTPUT
