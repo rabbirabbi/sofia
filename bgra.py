@@ -1,3 +1,4 @@
+PROGRAM 7
 import matplotlib.pyplot as plt
 
 #x-co ordinateof left sides of bars
@@ -23,3 +24,4 @@ plt.title("my first graph")
 
 #function to show the plot
 plt.show()
+OUTPUT
